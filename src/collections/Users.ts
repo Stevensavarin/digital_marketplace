@@ -4,8 +4,8 @@ export const Users: CollectionConfig = {
     slug: "users",
     auth: {
         verify: {
-            generateEmailHTML: ({token}) => {
-                return `<a href='${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?=${token}'>Verify account</a>`
+            generateEmailHTML: ({ token }) => {
+                return `<a href='${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?token=${token}'>Verify account</a>`
             },
         },
     },
@@ -23,7 +23,7 @@ export const Users: CollectionConfig = {
             type: "select",
             options: [
                 {label: "Admin", value: "admin"},
-                {label: "Users", value: "user"},
+                {label: "User", value: "user"},
             ],
         },
     ],
