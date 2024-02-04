@@ -140,7 +140,7 @@ const ThankYouPage = async ({ searchParams }: PageProps) => {
                                                         download={product.name}
                                                         className="text-purple-600 hover:underline underline-offset-2"
                                                     >
-                                                        Download assets
+                                                        Download asset
                                                     </a>
                                                 ) : null}
                                             </div>
